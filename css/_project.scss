@@ -116,7 +116,7 @@ drawer
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: #edecfc;
+  background: url(../img/blue_white_bg-main.jpeg)no-repeat center center / cover;
   right: -110vw;
   transition: right 0.3s;
   z-index: 100;

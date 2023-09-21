@@ -667,7 +667,7 @@ drawer
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: #edecfc;
+  background: url(../img/blue_white_bg-main.jpeg) no-repeat center center/cover;
   right: -110vw;
   -webkit-transition: right 0.3s;
   transition: right 0.3s;
