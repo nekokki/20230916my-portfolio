@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Rampart+One&display=swap');
+
+$font-color: #565956;
+$font-ja: "Noto Sans JP", sans-serif;
+$font-en: 'Alegreya', sans-serif;
+$font-title: 'Rampart One', sans-serif;
+$main-color: #FF9800;
+$base-color: #F2F4F1;
+$base-color-light: #fff;
+$accent-color: #998866;
+$button-color: #0e0909;
+
+$layout-width-inner: 1280px;
+
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "tab": "(min-width: 768px) and (max-width: 1023px)",
+  "lp": "(min-width: 1024px) and (max-width: 1279px)",
+  "pc": "(min-width: #{$layout-width-inner}px)"
+) !default;
+
+// メディアクエリ
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+
+/*----------------------
+reset
+----------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $font-color;
+}
+
+body {
+  font-family: $font-ja;
+  font-size: 16px;
+  line-height: 1.6;
+  background: $base-color-light;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url(../img/blue_white_bg-main.jpeg)no-repeat center center / cover;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    transform: translateY(-5px);  /* 上に5ピクセル動く */
+    transition: all 0.3s;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+    display: flex;
+    @include mq('sp') {
+      display: block;
+    }
+}
+
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    @include mq('sp') {
+      display: block;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 16px;
+    
+
+    &::after {
+        content: "";
+        background: $accent-color;
+        height: 1px;
+        width: 60px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+h1 {
+    font-weight: 1000;
+    text-align: center;
+    font-size: 64px;
+    color: #EAEAEA;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.pc {
+    @include mq('sp') {
+      display: none !important;
+    }
+}
+
+.mqsp{
+    display: none !important;
+    @include mq('tab') {
+      display: none !important;
+    }
+    @include mq('sp') {
+      display: block !important;
+    }
+}
+
+.mqtab {
+    display: none;
+    @include mq('tab') {
+      display: block !important;
+    }
+    @include mq('sp') {
+      display: block;
+    }
+}
+
+
+@keyframes vertical-single-rotate {
+  0%, 100% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+}

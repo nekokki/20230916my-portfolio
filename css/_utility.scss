@@ -1,0 +1,56 @@
+.u-orange {
+    color: $main-color;
+    font-size: 30px;
+    padding-right: 0.5vw;
+    @include mq('tab') {
+      font-size: 24px;
+    }
+    @include mq('sp') {
+      font-size: 20px;
+    }
+}
+
+.u-orange40 {
+    color: $main-color;
+    font-size: 40px;
+    padding-right: 0.5vw;
+    @include mq('lp') {
+      font-size: 30px;
+    }
+    @include mq('tab') {
+      font-size: 24px;
+    }
+    @include mq('sp') {
+      font-size: 20px;
+    }
+}
+
+#u-w40vw {
+    width: 40vw;
+    padding-right: 5vw;
+    @include mq('sp') {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 2vh;
+    }
+}
+
+.u-font__main {
+    color: $main-color;
+}
+
+.u-ja {
+    font-family: $font-ja;
+    font-size: 16px;
+    @include mq('sp') {
+      font-size: 12px;
+    }
+}
+
+.u-tac {
+    text-align: center;
+}
+
+.u-font__accent {
+    color: $accent-color;
+}
