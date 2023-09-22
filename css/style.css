@@ -188,7 +188,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .l-inner {
-    padding: 0 20px;
+    padding: 10vh 20px;
   }
 }
 
@@ -728,7 +728,7 @@ top
 }
 @media (max-width: 767px) {
   .p-top .l-inner {
-    padding: 5vh 5vw;
+    padding: 10vh 5vw 15vh;
   }
 }
 .p-top .l-inner .p-top__items {
