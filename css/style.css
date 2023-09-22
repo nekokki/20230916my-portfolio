@@ -907,7 +907,7 @@ features
 about
 ----------------------*/
 .p-about__inner {
-  padding: 20px 70px 20px;
+  padding: 20px 0px;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .p-about__inner {
@@ -987,16 +987,16 @@ about
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .p-about__item {
-    padding-bottom: 1vh;
+    padding-bottom: 10vh;
   }
 }
 @media (max-width: 767px) {
   .p-about__item {
-    padding-bottom: 8vh;
+    padding-bottom: 15vh;
   }
 }
 
@@ -1013,7 +1013,7 @@ about
 .p-about__texts {
   position: relative;
   z-index: 10;
-  width: calc(100% - 450px);
+  width: 50vw;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .p-about__texts {
@@ -1211,7 +1211,7 @@ about
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  padding-bottom: 1vh;
+  padding-bottom: 4vh;
   line-height: 1.2;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -1238,6 +1238,7 @@ about
   line-height: 150%;
   letter-spacing: 0.54px;
   width: 28vw;
+  padding-bottom: 3vh;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .p-about__text {
@@ -1273,9 +1274,18 @@ about
 
 .p-about__img {
   display: block;
-  width: 40vw;
-  height: 24vh;
+  width: 100%;
+  height: 27vh;
   position: relative;
+}
+.p-about__img .p-about__lead {
+  text-align: center;
+  font-family: "Alegreya", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 1vh;
+  text-decoration: underline;
+  color: #64629d;
 }
 .p-about__img .video-item {
   position: absolute;
@@ -1298,7 +1308,6 @@ about
 }
 .p-about__img img {
   width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
