@@ -259,7 +259,7 @@ features
   }
   @include mq("sp") {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: contain;
     padding-bottom: 2vh;
   }
@@ -309,28 +309,10 @@ features
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 1vh;
-  @include mq('tab') {
-    font-size: 24px;
-  }
-  @include mq('lp') {
-    font-size: 24px;
-  }
-  @include mq('sp') {
-    font-size: 24px;
-  }
 }
 .gold-font {
   font-size: 36px;
   color: $accent-color;
-    @include mq('tab') {
-    font-size: 30px;
-  }
-  @include mq('lp') {
-    font-size: 30px;
-  }
-  @include mq('sp') {
-    font-size: 30px;
-  }
 }
 .features-item__text {
   letter-spacing: 1.28px;
@@ -346,14 +328,14 @@ features
     letter-spacing: 1.12px;
   }
 }
-.features-item__text-pd{
+.features-item__text-pd {
   padding-left: 10%;
 }
 .features-item.flex-reverse {
 }
-.features-item__stars{
+.features-item__stars {
   padding-bottom: 0.5vh;
-  img{
+  img {
     width: 10%;
     height: 10%;
   }
@@ -393,8 +375,8 @@ about
   }
 }
 
-.p-solution-text {
-  font-size: 24px;
+.p-portfolio-text {
+  font-size: 30px;
   font-weight: 700;
   line-height: 40px;
   display: flex;
@@ -402,23 +384,28 @@ about
   background: #fff;
   color: #64629d;
   padding: 28px 0 28px 50px;
-  border-radius: 32px;
+  border-radius: 64px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
+  border: 3px solid #64629d;
   margin-bottom: 5vh;
-  img {
-    width: 32px;
-    height: 32px;
-    margin-right: 33px;
+  @include mq("tab") {
+    font-size: 24px;
   }
+
   @include mq("sp") {
     font-size: 16px;
     line-height: normal;
-    padding: 25px 40px 25px 27px;
-    img {
-      width: 24px;
-      height: 24px;
-      margin-right: 16px;
-    }
+    padding: 15px 25px 15px 27px;
+  }
+}
+.p-portfolio__maru {
+  font-size: 50px;
+  padding-right: 3%;
+  @include mq("tab") {
+    font-size: 30px;
+  }
+  @include mq("sp") {
+    font-size: 25px;
   }
 }
 .p-about__item {
