@@ -764,16 +764,16 @@ about
 features
 ----------------------*/
 .features-wrap {
-  padding: 20px 120px;
+  padding: 20px 50px;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .features-wrap {
-    padding: 20px 40px;
+    padding: 20px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .features-wrap {
-    padding: 20px 40px;
+    padding: 20px 30px;
   }
 }
 @media (max-width: 767px) {
@@ -789,30 +789,34 @@ features
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
   margin-bottom: 33px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 30px;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .features-item {
     padding: 40px;
+    gap: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .features-item {
     padding: 30px;
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
   .features-item {
     padding: 30px 32px;
     margin-bottom: 24px;
+    gap: 10px;
   }
 }
 
 .features-item__img {
-  width: 446px;
-  height: 275px;
+  width: 100%;
+  height: 100%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -838,7 +842,17 @@ features
 }
 
 .features-item__texts {
-  width: 32vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .features-item__texts {
@@ -847,6 +861,20 @@ features
 }
 @media (max-width: 767px) {
   .features-item__texts {
+    width: 100%;
+  }
+}
+
+.features-item__texts-skill {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .features-item__texts-skill {
+    width: 40vw;
+  }
+}
+@media (max-width: 767px) {
+  .features-item__texts-skill {
     width: 100%;
   }
 }
@@ -877,34 +905,80 @@ features
 }
 
 .features-item__title {
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 1vh;
 }
-
-.gold-font {
-  font-size: 24px;
-  color: #998866;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .features-item__title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .features-item__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .features-item__title {
+    font-size: 24px;
+  }
 }
 
-.features--item__text {
+.gold-font {
+  font-size: 36px;
+  color: #998866;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gold-font {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .gold-font {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .gold-font {
+    font-size: 30px;
+  }
+}
+
+.features-item__text {
   letter-spacing: 1.28px;
   font-family: "Alegreya", sans-serif;
   font-weight: 600;
-  padding-bottom: 2vh;
-  font-size: 18px;
-  line-height: 23px;
+  padding-bottom: 0.5vh;
+  font-size: 24px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .features--item__text {
+  .features-item__text {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .features--item__text {
+  .features-item__text {
     font-size: 14px;
     letter-spacing: 1.12px;
   }
+}
+
+.features-item__text-pd {
+  padding-left: 10%;
+}
+
+.features-item__stars {
+  padding-bottom: 0.5vh;
+}
+.features-item__stars img {
+  width: 10%;
+  height: 10%;
+}
+
+.features-item__lead {
+  font-size: 14px;
+  padding-bottom: 2vh;
 }
 
 /*----------------------
@@ -1524,4 +1598,43 @@ contact
 
 .u-font__accent {
   color: #998866;
+}
+
+.u-lh24 {
+  line-height: 24px;
+  padding-bottom: 2vh;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .u-lh24 {
+    padding-bottom: 2vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .u-lh24 {
+    padding-bottom: 1vh;
+  }
+}
+@media (max-width: 767px) {
+  .u-lh24 {
+    padding-bottom: 1vh;
+  }
+}
+
+.u-mb5 {
+  margin-bottom: 3vh;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .u-mb5 {
+    margin-bottom: 2vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .u-mb5 {
+    margin-bottom: 1vh;
+  }
+}
+@media (max-width: 767px) {
+  .u-mb5 {
+    margin-bottom: 1vh;
+  }
 }

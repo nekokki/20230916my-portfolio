@@ -54,3 +54,30 @@
 .u-font__accent {
     color: $accent-color;
 }
+
+.u-lh24 {
+  line-height: 24px;
+  padding-bottom: 2vh;
+  @include mq('lp') {
+    padding-bottom: 2vh;
+  }
+  @include mq('tab') {
+    padding-bottom: 1vh;
+  }
+  @include mq('sp') {
+    padding-bottom: 1vh;
+  }
+}
+
+.u-mb5 {
+  margin-bottom: 3vh;
+  @include mq('lp') {
+    margin-bottom: 2vh;
+  }
+  @include mq('tab') {
+    margin-bottom: 1vh;
+  }
+  @include mq('sp') {
+    margin-bottom: 1vh;
+  }
+}
