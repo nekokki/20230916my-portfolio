@@ -320,6 +320,7 @@ features
   font-weight: 700;
   padding-bottom: 0.5vh;
   font-size: 36px;
+  padding-left: 5%;
   @include mq("tab") {
     font-size: 24px;
   }
@@ -335,6 +336,7 @@ features
 }
 .features-item__stars {
   padding-bottom: 0.5vh;
+  padding-left: 5%;
   img {
     width: 10%;
     height: 10%;
@@ -343,6 +345,7 @@ features
 .features-item__lead {
   font-size: 14px;
   padding-bottom: 2vh;
+  padding-left: 5%;
 }
 
 /*----------------------

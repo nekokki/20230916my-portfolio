@@ -921,6 +921,7 @@ features
   font-weight: 700;
   padding-bottom: 0.5vh;
   font-size: 36px;
+  padding-left: 5%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .features-item__text {
@@ -940,6 +941,7 @@ features
 
 .features-item__stars {
   padding-bottom: 0.5vh;
+  padding-left: 5%;
 }
 .features-item__stars img {
   width: 10%;
@@ -949,6 +951,7 @@ features
 .features-item__lead {
   font-size: 14px;
   padding-bottom: 2vh;
+  padding-left: 5%;
 }
 
 /*----------------------
@@ -1413,26 +1416,6 @@ contact
   color: #998866;
 }
 
-.u-lh24 {
-  line-height: 24px;
-  padding-bottom: 2vh;
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .u-lh24 {
-    padding-bottom: 2vh;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .u-lh24 {
-    padding-bottom: 1vh;
-  }
-}
-@media (max-width: 767px) {
-  .u-lh24 {
-    padding-bottom: 1vh;
-  }
-}
-
 .u-mb5 {
   margin-bottom: 3vh;
 }
@@ -1449,6 +1432,26 @@ contact
 @media (max-width: 767px) {
   .u-mb5 {
     margin-bottom: 1vh;
+  }
+}
+
+.u-lh24 {
+  line-height: 1;
+  padding-bottom: 3vh;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .u-lh24 {
+    padding-bottom: 2vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .u-lh24 {
+    padding-bottom: 1vh;
+  }
+}
+@media (max-width: 767px) {
+  .u-lh24 {
+    padding-bottom: 1vh;
   }
 }
 
