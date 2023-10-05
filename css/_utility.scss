@@ -31,7 +31,7 @@
   @include mq("sp") {
     width: 100%;
     padding-right: 0;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
   }
 }
 
@@ -79,5 +79,167 @@
   }
   @include mq("sp") {
     margin-bottom: 1vh;
+  }
+}
+
+.after01 {
+  margin-left: 3vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "01";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
+  }
+}
+.after02 {
+  margin-right: 5vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "02";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
+  }
+}
+.after03 {
+  margin-left: 5vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "03";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
+  }
+}
+
+.after04 {
+  margin-left: 5vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "04";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("lp") {
+      right: 10%;
+    }
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
+  }
+}
+
+.after05 {
+  margin-left: 5vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "05";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("lp") {
+      right: 10%;
+    }
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
+  }
+}
+.after06 {
+  margin-left: 5vw;
+  @include mq("sp") {
+    margin-left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: "06";
+    color: #fff;
+    font-size: 288px;
+    font-weight: 400;
+    font-family: $font-en;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    @include mq("lp") {
+      right: 10%;
+    }
+    @include mq("tab") {
+      font-size: 200px;
+    }
+    @include mq("sp") {
+      font-size: 180px;
+    }
   }
 }

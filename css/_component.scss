@@ -1,72 +1,72 @@
 .c-rotate__title {
-    animation: vertical-single-rotate 6s infinite linear; /* 6秒かけて360度回転して、その後3秒間止まる */
-    font-family: $font-en;
-    font-size: 50px;
-    line-height: 70px;
-    padding-bottom: 1vh;
-    animation: none;
-    @include mq("lp") {
+  animation: vertical-single-rotate 6s infinite linear; /* 6秒かけて360度回転して、その後3秒間止まる */
+  font-family: $font-en;
+  font-size: 50px;
+  line-height: 70px;
+  padding-bottom: 1vh;
+  animation: none;
+  @include mq("lp") {
     font-size: 40px;
     line-height: 1.2;
-    }
-    @include mq("tab") {
+  }
+  @include mq("tab") {
     font-size: 35px;
     line-height: 1.2;
-    }
-    @include mq("sp") {
+  }
+  @include mq("sp") {
     font-size: 35px;
-    }
+  }
 }
 
 .c-main__title {
-    font-family: $font-en;
-    font-size: 120px;
-    font-weight: 600;
-    line-height: 150px;
-    @include mq("lp") {
+  font-family: $font-en;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 150px;
+  @include mq("lp") {
     font-size: 100px;
     line-height: 1.2;
-    }
-    @include mq("tab") {
+  }
+  @include mq("tab") {
     font-size: 90px;
     line-height: 1.2;
-    }
-    @include mq("sp") {
+  }
+  @include mq("sp") {
     font-size: 80px;
     line-height: 1;
-    }
+  }
 }
 .c-main__subtitle {
-    font-family: $font-en;
-    font-size: 40px;
-    padding-bottom: 5vh;
-    @include mq("lp") {
+  font-family: $font-en;
+  font-size: 40px;
+  padding-bottom: 5vh;
+  @include mq("lp") {
     font-size: 36px;
     padding-bottom: 2vh;
-    }
-    @include mq("tab") {
+  }
+  @include mq("tab") {
     font-size: 30px;
     padding-bottom: 2vh;
-    }
-    @include mq("sp") {
+  }
+  @include mq("sp") {
     font-size: 26px;
     padding-bottom: 2vh;
-    }
+  }
 }
 .c-title__lead {
-    font-size: 24px;
-    @include mq("lp") {
+  font-size: 24px;
+  @include mq("lp") {
     font-size: 20px;
-    }
-    @include mq("tab") {
+  }
+  @include mq("tab") {
     font-size: 20px;
-    }
-    @include mq("sp") {
+  }
+  @include mq("sp") {
     font-size: 18px;
-    }
-    a {
+  }
+  a {
     color: #ff9800;
-    }
+  }
 }
 
 .c-copy {
@@ -121,77 +121,77 @@
 }
 
 .c-about__main-title {
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 700;
   font-family: $font-title;
-  line-height: 7rem;
-  padding-bottom: 3vh;
+  line-height: 1;
+  padding-bottom: 5vh;
   @include mq("lp") {
     font-size: 70px;
-    padding-bottom: 1vh;
-    line-height: 1.7;
+    padding-bottom: 4vh;
+    line-height: 70px;
   }
   @include mq("tab") {
     font-size: 50px;
-    padding-bottom: 1vh;
-    line-height: 1.4;
+    padding-bottom: 3vh;
+    line-height: 50px;
   }
   @include mq("sp") {
     font-size: 50px;
-    padding-bottom: 1vh;
-    line-height: 1.4;
+    padding-bottom: 5vh;
+    line-height: 50px;
   }
 }
 .c-about__title {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
-  padding-bottom: 2vh;
-  line-height: 3rem;
+  padding-bottom: 5vh;
+  line-height: 1;
   &:last-child {
     padding-bottom: 0;
   }
   @include mq("lp") {
     font-size: 24px;
-    padding-bottom: 1vh;
-    line-height: 1.5;
+    padding-bottom: 3vh;
+    line-height: 24px;
   }
   @include mq("tab") {
     font-size: 20px;
-    padding-bottom: 1vh;
-    line-height: 1.5;
+    padding-bottom: 2vh;
+    line-height: 20px;
   }
   @include mq("sp") {
     font-size: 24px;
-    padding-bottom: 1vh;
-    line-height: 1.4;
+    padding-bottom: 3vh;
+    line-height: 24px;
   }
 }
 
 .c-about__lead {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   a {
     color: #64629d;
     text-decoration: underline;
   }
   @include mq("lp") {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1;
   }
   @include mq("tab") {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1;
   }
   @include mq("sp") {
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1;
   }
 }
 
 .c-require {
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 
 .c-btn {
@@ -235,7 +235,7 @@
 }
 
 .c-btn:hover {
-    transform: translateY(-5px);  /* 上に5ピクセル動く */
+  transform: translateY(-5px); /* 上に5ピクセル動く */
 }
 
 .to-top {
