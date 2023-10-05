@@ -918,18 +918,18 @@ features
 .features-item__text {
   letter-spacing: 1.28px;
   font-family: "Alegreya", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 0.5vh;
-  font-size: 24px;
+  font-size: 36px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .features-item__text {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 @media (max-width: 767px) {
   .features-item__text {
-    font-size: 14px;
+    font-size: 24px;
     letter-spacing: 1.12px;
   }
 }
