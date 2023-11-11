@@ -319,13 +319,13 @@ features
   font-family: $font-en;
   font-weight: 700;
   padding-bottom: 0.5vh;
-  font-size: 36px;
+  font-size: 24px;
   padding-left: 5%;
   @include mq("tab") {
-    font-size: 24px;
+    font-size: 20px;
   }
   @include mq("sp") {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.12px;
   }
 }

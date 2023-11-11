@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 3秒後にテキストを変更
     setTimeout(function () {
-      rotatingText.textContent = isProgrammer ? "Supervisor" : "Programmer";
+      rotatingText.textContent = isProgrammer ? "Programmer" : "Programmer";
       isProgrammer = !isProgrammer;
 
       // アニメーションをリセット
